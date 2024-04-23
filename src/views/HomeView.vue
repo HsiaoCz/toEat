@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const restaurantList = ref<string[]>([]);
-const newRestaurantName = ref('');
-
+const restaurantList: any = ref([])
+const newRestaurantName = ref('')
 
 function addRestaurant() {
   restaurantList.value.push(newRestaurantName.value)
